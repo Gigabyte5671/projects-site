@@ -1,7 +1,7 @@
 var projects = [
   {
     title: "AutoType JS",
-    tags: ["JavaScript"],
+    tags: ["JavaScript","Library"],
     date: "2021/10/11",
     desc: "A simple auto-typing/typewriter effect written in vanilla JS.",
     image: "https://gigabyte5671.github.io/AutoType/cover.webp",
@@ -17,7 +17,7 @@ var projects = [
   },
   {
     title: "wilderzone Live",
-    tags: [""],
+    tags: [],
     date: "2021/08/21",
     desc: "The main community website for the Tribes: Ascend video game.",
     image: "https://wilderzone.live/assets/images/site_cover.webp",
@@ -25,7 +25,7 @@ var projects = [
   },
   {
     title: "wilderzone Servers",
-    tags: [""],
+    tags: [],
     date: "2021/08/16",
     desc: "The fastest way to check who's playing Tribes: Ascend and what game servers are active.",
     image: "https://servers.wilderzone.live/assets/images/site_cover.webp",
@@ -33,7 +33,7 @@ var projects = [
   },
   {
     title: "CookieManager JS",
-    tags: [""],
+    tags: [],
     date: "2021/05/13",
     desc: "A simple and lightweight library for adding, fetching, modifying, and removing browser cookies.",
     image: "assets/images/cookieManager_cover.webp",
