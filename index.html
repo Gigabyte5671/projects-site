@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="https://gigabyte5671.github.io/lightshard-css/css/lightshard.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://gigabyte5671.github.io/AutoType/dist/autotype.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
     <link rel="shortcut icon" href="assets/images/favicon.webp">
     <script type="text/javascript" src="https://gigabyte5671.github.io/AutoType/dist/autotype.min.js" defer></script>
     <script type="text/javascript" src="https://gigabyte5671.github.io/lightshard-css/lib/lightshard.js" defer></script>
@@ -34,16 +39,21 @@
       </navlinks>
     </nav>
 
-    <main>
-      <!-- <img src="assets/images/favicon.webp" draggable="false" class="logo"> -->
-      <landing id="home">
-        <img src="" draggable="false">
-        <h1 style="font-weight: 100;">Welcome</h1>
-      </landing>
+    <landing id="home">
+      <landing_inner>
+        <landing_background>
+          <img src="assets/images/starscape.webp" draggable="false">
+        </landing_background>
+        <landing_image></landing_image>
+        <landing_title>GIGA</landing_title>
+        <landing_subtitle>bringing out your best potential</landing_subtitle>
+        <a href="#projects" class="landing_down_arrow"><img src="assets/icons/expand_more_white_24dp.svg" draggable="false"></a>
+      </landing_inner>
+    </landing>
 
+    <main>
       <h1 style="align-self: flex-start;font-weight: 100;">Projects:</h1>
       <projects id="projects"></projects>
-      
     </main>
   </body>
   
