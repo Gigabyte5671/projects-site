@@ -17,16 +17,51 @@
     <link rel="stylesheet" href="https://gigabyte5671.github.io/lightshard-css/css/lightshard.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://gigabyte5671.github.io/AutoType/dist/autotype.min.css">
-    <link rel="shortcut icon" href="favicon.svg">
+    <link rel="shortcut icon" href="assets/images/favicon.webp">
     <script type="text/javascript" src="https://gigabyte5671.github.io/AutoType/dist/autotype.min.js" defer></script>
+    <script type="text/javascript" src="https://gigabyte5671.github.io/lightshard-css/lib/lightshard.js" defer></script>
+    <script type="text/javascript" src="assets/data/projects.js" defer></script>
     <script type="text/javascript" src="index.js" defer></script>
   </head>
   
   <body>
+    <nav>
+      <background></background>
+      <site_logo><a href=""><site_logo_image><img src="assets/images/favicon.webp" draggable="false"></site_logo_image></a></site_logo>
+      <navlinks>
+        <a href="#home" class="active" onclick="navlinks(event)"><p>Home</p></a>
+        <a href="#projects" onclick="navlinks(event)"><p>Projects</p></a>
+      </navlinks>
+    </nav>
+
     <main>
-      <img src="favicon.svg" draggable="false" class="logo">
+      <!-- <img src="assets/images/favicon.webp" draggable="false" class="logo"> -->
+      <landing id="home">
+        <img src="" draggable="false">
+        <h1 style="font-weight: 100;">Welcome</h1>
+      </landing>
+
+      <h1 style="align-self: flex-start;font-weight: 100;">Projects:</h1>
+      <projects id="projects"></projects>
       
-      <!-- <a id="github_link" href="https://github.com/Gigabyte5671/DOM-Particles" target="_blank"><img src="https://simpleicons.org/icons/github.svg" draggable="false"></a> -->
     </main>
   </body>
+  
+  
+  <script src="lib/jquery.min.js"></script>
+  <script> //Navigation Events
+    function navlinks(event){
+      $("navlinks").children().removeClass("active");
+      $(event.target).addClass("active");
+      /* if($(event.target).html() == "Home"){
+        $("title").html("Dazza Coaching");
+      }else{
+        $("title").html($(event.target).html() + " | simple sense");
+      } */
+    }
+    function navlinksDemo(event){
+      $("#navlinksDemo").children().removeClass("active");
+      $(event.target).addClass("active");
+    }
+  </script>
 </html>
