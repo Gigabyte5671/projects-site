@@ -27,13 +27,14 @@ main{
   opacity: 0.2;
 }
 h1{
-  
+  align-self: flex-start;
+  font-weight: 100;
 }
 h3{
   
 }
-p{
-  
+a{
+  color: white;
 }
 
 
@@ -48,6 +49,7 @@ landing{
   height: 80vh;
   padding-top: 0px;
   overflow: hidden;
+  user-select: none;
 }
 landing_inner{
   position: relative;
@@ -67,7 +69,7 @@ landing_inner::after{
   left: 0px;
   display: block;
   width: 100%;
-  height: 50%;
+  height: 15%;
   background: linear-gradient(0deg, #2D2D2DFF 0%, #2D2D2D00 100%);
 }
 landing_background{
@@ -206,6 +208,7 @@ project_card_inner tag_list tag{
   height: 16px;
   min-height: 16px;
   max-height: 16px;
+  margin: 0px 5px 0px 0px;
   padding: 0px 7px 3px 7px;
   font-size: 10px;
   background-color: var(--ls_darkblue);
