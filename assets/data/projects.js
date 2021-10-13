@@ -1,6 +1,35 @@
 var projects = [
   {
-    title: "Libraries",
+    title: "In_Progress",
+    items: [
+      {
+        title: "Lightshard",
+        tags: ["JavaScript","CSS","Framework"],
+        date: "In Progress",
+        desc: "",
+        image: "",
+        link: ""
+      },
+      {
+        title: "Wilderzone Tournaments",
+        tags: [],
+        date: "In Progress",
+        desc: "Tournaments from the wilderzone.",
+        image: "assets/images/Honor_Logo.svg",
+        link: "https://gigabyte5671.github.io/CookieManager/"
+      },
+      {
+        title: "Server Config Generator",
+        tags: [],
+        date: "In Progress",
+        desc: "Dsjkdfhskdfhuesfdb.",
+        image: "https://servers.wilderzone.live/assets/images/SCG_cover.webp",
+        link: "https://servers.wilderzone.live/server_config_generator/"
+      }
+    ]
+  },
+  {
+    title: "Completed",
     items: [
       {
         title: "AutoType JS",
@@ -19,32 +48,6 @@ var projects = [
         link: ""
       },
       {
-        title: "CookieManager JS",
-        tags: [],
-        date: "2021/05/13",
-        desc: "A simple and lightweight library for adding, fetching, modifying, and removing browser cookies.",
-        image: "assets/images/cookieManager_cover.webp",
-        link: "https://gigabyte5671.github.io/CookieManager/"
-      }
-    ]
-  },
-  {
-    title: "Frameworks",
-    items: [
-      {
-        title: "Lightshard",
-        tags: ["JavaScript","CSS","Framework"],
-        date: "In Progress",
-        desc: "",
-        image: "",
-        link: ""
-      }
-    ]
-  },
-  {
-    title: "Websites",
-    items: [
-      {
         title: "wilderzone Live",
         tags: [],
         date: "2021/08/21",
@@ -61,28 +64,20 @@ var projects = [
         link: "https://servers.wilderzone.live/"
       },
       {
-        title: "Server Config Generator",
-        tags: [],
-        date: "In Progress",
-        desc: "Dsjkdfhskdfhuesfdb.",
-        image: "https://servers.wilderzone.live/assets/images/SCG_cover.webp",
-        link: "https://servers.wilderzone.live/server_config_generator/"
-      },
-      {
-        title: "Wilderzone Tournaments",
-        tags: [],
-        date: "In Progress",
-        desc: "Tournaments from the wilderzone.",
-        image: "assets/images/Honor_Logo.svg",
-        link: "https://gigabyte5671.github.io/CookieManager/"
-      },
-      {
         title: "PoliteCrow",
         tags: [],
         date: "2021/06/06",
         desc: "Website for music producer PoliteCrow.",
         image: "https://politecrow.com/assets/Site_Thumbnail.jpg",
         link: "https://politecrow.com/"
+      },
+      {
+        title: "CookieManager JS",
+        tags: [],
+        date: "2021/05/13",
+        desc: "A simple and lightweight library for adding, fetching, modifying, and removing browser cookies.",
+        image: "assets/images/cookieManager_cover.webp",
+        link: "https://gigabyte5671.github.io/CookieManager/"
       }
     ]
   }
