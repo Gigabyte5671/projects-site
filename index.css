@@ -1,3 +1,7 @@
+:root{
+  --site_logo_expanded_width: var(--site_logo_collapsed_width);
+}
+
 body{
   height: unset;
   background: unset;
