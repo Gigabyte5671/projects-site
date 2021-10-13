@@ -1,6 +1,6 @@
 var ls = new lightshard;
 
-
+ls.flags.doNavTransparency = 0;
 ls.init();
 
 function populateDOM(){
