@@ -61,11 +61,19 @@ var projects = [
         link: "https://servers.wilderzone.live/"
       },
       {
+        title: "Server Config Generator",
+        tags: [],
+        date: "In Progress",
+        desc: "Dsjkdfhskdfhuesfdb.",
+        image: "https://servers.wilderzone.live/assets/images/SCG_cover.webp",
+        link: "https://servers.wilderzone.live/server_config_generator/"
+      },
+      {
         title: "Wilderzone Tournaments",
         tags: [],
         date: "In Progress",
         desc: "Tournaments from the wilderzone.",
-        image: "assets/images/Honor_logo.png",
+        image: "assets/images/Honor_Logo.svg",
         link: "https://gigabyte5671.github.io/CookieManager/"
       },
       {
