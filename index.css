@@ -179,7 +179,7 @@ project_card{
   transition: var(--ls_anim_duration_short) ease all;
 }
 project_card:hover{
-  box-shadow: 0px 5px 10px -6px black;
+  box-shadow: 0px 5px 10px -6px var(--ls_lightblue);
   transform: translateY(-5px);
 }
 project_card img{
