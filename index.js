@@ -4,28 +4,33 @@ ls.flags.doNavTransparency = 0;
 ls.init();
 
 function populateDOM(){
-  projects.forEach(function(p){
-    $("main").append(
-      ls.blocks.h1(p.title + ":") +
-      '<projects id="' + p.title + '"></projects>'
-    );
-    
+  $("#projects section_inner").append(
+    ls.blocks.h2("In Progress:") +
+    '<projects id="inprogress"></projects>' +
+    ls.blocks.h2("Completed:") +
+    '<projects id="completed"></projects>'
+  );
+  
 
-    p.items.forEach(function(i){
-      $("#" + p.title).append(
-        ls.blocks.link(i.link, "", "", "",
-          ls.blocks.general("project_card", "", 
-            ls.blocks.img(i.image) +
-            ls.blocks.general("project_card_inner", '" href="#', 
-              ls.blocks.taglist("", i.tags) +
-              ls.blocks.h2(i.title) +
-              ls.blocks.info((i.date == "In Progress" ? i.date : ls.toSpokenDate(i.date))) +
-              ls.blocks.paragraph(i.desc)
-            )
+  projects.forEach(function(p){
+    if(p.status == "In Progress"){
+      var id = "inprogress";
+    }else{
+      var id = "completed";
+    }
+    $("#" + id).append(
+      ls.blocks.link(p.link, "", "", "",
+        ls.blocks.general("project_card", "", 
+          ls.blocks.img(p.image) +
+          ls.blocks.general("project_card_inner", '" href="#', 
+            ls.blocks.taglist("", p.tags) +
+            ls.blocks.h3(p.title) +
+            ls.blocks.info((p.status == "In Progress" ? p.status : ls.toSpokenDate(p.date))) +
+            ls.blocks.paragraph(p.desc)
           )
         )
-      );
-    });
+      )
+    );
   });
 }
 populateDOM();
