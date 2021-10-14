@@ -2,8 +2,11 @@
   --site_logo_expanded_width: var(--site_logo_collapsed_width);
 }
 
+html{
+  /* background-image: url("assets/images/starscape.webp"); */
+}
+
 body{
-  height: unset;
   background: unset;
   overflow-x: hidden;
   overflow-y: auto;
@@ -17,6 +20,19 @@ main{
   align-items: center;
   width: 100%;
   height: unset;
+  backdrop-filter: blur(130px);
+}
+section{
+  align-items: center;
+  width: 100%;
+}
+section_inner{
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid var(--ls_lightblue);
+  border-bottom: 1px solid var(--ls_lightblue);
 }
 .logo{
   position: relative;
@@ -28,13 +44,13 @@ main{
 }
 h1{
   align-self: flex-start;
-  font-weight: 100;
+  color: var(--ls_text_color);
+  font-size: 60px;
+  opacity: 0.3;
 }
-h3{
-  
-}
-a{
-  color: white;
+h2{
+  align-self: flex-start;
+  font-size: 28px;
 }
 
 
@@ -46,7 +62,7 @@ landing{
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   padding-top: 0px;
   overflow: hidden;
   user-select: none;
@@ -69,8 +85,8 @@ landing_inner::after{
   left: 0px;
   display: block;
   width: 100%;
-  height: 5%;
-  background: linear-gradient(0deg, #2D2D2DFF 0%, #2D2D2D00 100%);
+  height: 5px;
+  background: linear-gradient(0deg, #000000FF -350%, #00000000 100%);
 }
 landing_background{
   position: absolute;
@@ -94,7 +110,7 @@ landing_title{
   font-size: 500px;
   font-weight: 400;
 
-  background-image: url("assets/images/starscape.webp");
+  background-image: url("assets/images/blue_neon.webp");
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
@@ -219,7 +235,7 @@ project_card_inner tag_list tag{
   background-color: var(--ls_darkblue);
   border-radius: 8px;
 }
-project_card_inner h2{
+project_card_inner h3{
   font-size: 22px;
 }
 project_card_inner p{
