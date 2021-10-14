@@ -33,6 +33,7 @@ section_inner{
   padding: 10px;
   border-top: 1px solid var(--ls_lightblue);
   border-bottom: 1px solid var(--ls_lightblue);
+  border-color: rgba(var(--ls_lightblue_rgb), 0.4);
 }
 .logo{
   position: relative;
