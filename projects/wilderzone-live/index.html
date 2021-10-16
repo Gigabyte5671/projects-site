@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Giga's Projects</title>
+    <meta property="og:title" content="Giga's Projects">
+    <meta property="og:site_name" content="Giga's Projects">
+    <meta name="description" content="Stuff I've made.">
+    <meta property="og:description" content="Stuff I've made.">
+    <meta name="author" content="Gigabyte5671">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="cover.webp">
+    <meta name="twitter:image:alt" content="site cover image">
+    <meta name="theme-color" content="#2D2D2D">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/images/G_96px.webp">
+    <link rel="stylesheet" href="https://gigabyte5671.github.io/lightshard/css/lightshard.css">
+    <link rel="stylesheet" href="https://gigabyte5671.github.io/AutoType/dist/autotype.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="https://gigabyte5671.github.io/AutoType/dist/autotype.min.js" defer></script>
+    <script type="text/javascript" src="https://gigabyte5671.github.io/lightshard/lib/lightshard.js" defer></script>
+    <script type="text/javascript" src="../../assets/data/projects.js" defer></script>
+  </head>
+  
+  <body>
+    <nav>
+      <background></background>
+      <site_logo><a href=""><site_logo_image><img src="../../assets/images/G_96px.webp" draggable="false"></site_logo_image></a></site_logo>
+      <navlinks>
+        <a href="../../" onclick="navlinks(event)"><p>Home</p></a>
+        <a href="../../#projects" class="active" onclick="navlinks(event)"><p>Projects</p></a>
+        <a href="../../#about" onclick="navlinks(event)"><p>About</p></a>
+      </navlinks>
+    </nav>
+
+    <main id="main">
+      <article>
+        <background_image style="background-image: url('https://wilderzone.live/assets/images/maps/raindance-1.webp');"></background_image>
+        <article_inner>
+          <article_image style="background-image: url('https://wilderzone.live/assets/images/maps/raindance-1.webp');"></article_image>
+          <h1>Wilderzone Live</h1>
+          <info>6th of June, 2021</info>
+          <p>Dolore deserunt voluptate sunt anim voluptate eu. Anim voluptate officia nostrud voluptate. Eu adipisicing irure consequat et tempor do. Lorem nulla in non esse dolor id ut mollit quis. Minim aliqua proident excepteur laboris ad ex eiusmod Lorem duis sunt ea anim. Id in quis tempor quis nostrud qui excepteur in eiusmod enim in ut.</p>
+          <p>will smile cutely when patted on head</p>
+          <p>Qui cupidatat in anim aliqua labore id et occaecat aute eu laboris mollit duis labore. Mollit et magna officia cillum mollit. Veniam officia anim laboris ad. Nostrud et cupidatat laborum dolor sunt. Adipisicing cupidatat consequat minim laborum consectetur voluptate mollit ea consequat ut reprehenderit irure cupidatat. Ad deserunt ex cupidatat minim irure duis anim id.</p>
+          <p>Eu deserunt et velit cupidatat. Anim eu do non exercitation ea excepteur reprehenderit nostrud incididunt quis esse laboris. Reprehenderit aliquip velit voluptate ex sit fugiat mollit officia. Cupidatat minim non labore quis est.</p>
+          <p>Duis quis id id sunt in ullamco exercitation. Deserunt dolor laborum in culpa. Et ea minim tempor est cillum deserunt in magna. Ut aliqua reprehenderit id occaecat elit ex nisi.</p>
+          <p>Eiusmod laboris adipisicing esse nulla proident id nisi ex. Anim voluptate dolor dolor anim adipisicing incididunt et est consequat. Labore qui proident enim occaecat veniam duis aliquip qui labore labore labore elit. Quis deserunt ullamco ea dolore veniam cillum aliquip Lorem minim in consequat tempor magna. Sint magna fugiat quis incididunt incididunt cupidatat dolore eu excepteur aliqua aute proident irure. Aute excepteur veniam dolor proident cillum eiusmod.</p>
+        </article_inner>
+      </article>
+    </main>
+  </body>
+  
+  
+  <script src="../../lib/jquery.min.js"></script>
+  <script> //Navigation Events
+    function navlinks(event){
+      $("navlinks").children().removeClass("active");
+      $(event.target).addClass("active");
+      /* if($(event.target).html() == "Home"){
+        $("title").html("Dazza Coaching");
+      }else{
+        $("title").html($(event.target).html() + " | simple sense");
+      } */
+    }
+    function navlinksDemo(event){
+      $("#navlinksDemo").children().removeClass("active");
+      $(event.target).addClass("active");
+    }
+  </script>
+</html>
