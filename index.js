@@ -1,13 +1,12 @@
-var ls = new lightshard;
-
-ls.flags.doNavTransparency = 0;
-ls.init();
+Lightshard.flags.doNavTransparency = 0;
+Lightshard.flags.urlAliases.push({alias: "{WL}", url: "https://wilderzone.live/"});
+Lightshard.functions.init();
 
 function populateDOM(){
   $("#projects section_inner").append(
-    ls.blocks.h2("In Progress:") +
+    Lightshard.blocks.h2("In Progress:") +
     '<projects id="inprogress"></projects>' +
-    ls.blocks.h2("Completed:") +
+    Lightshard.blocks.h2("Completed:") +
     '<projects id="completed"></projects>'
   );
   
@@ -19,14 +18,14 @@ function populateDOM(){
       var id = "completed";
     }
     $("#" + id).append(
-      ls.blocks.link(p.link, "", "", "",
-        ls.blocks.general("project_card", "", 
-          ls.blocks.img(p.image) +
-          ls.blocks.general("project_card_inner", '" href="#', 
-            ls.blocks.taglist("", p.tags) +
-            ls.blocks.h3(p.title) +
-            ls.blocks.info((p.status == "In Progress" ? p.status : ls.toSpokenDate(p.date))) +
-            ls.blocks.paragraph(p.desc)
+      Lightshard.blocks.link(p.link, "", "", "",
+        Lightshard.blocks.general("project_card", "", 
+          Lightshard.blocks.img(p.image) +
+          Lightshard.blocks.general("project_card_inner", '" href="#', 
+            Lightshard.blocks.taglist("", p.tags) +
+            Lightshard.blocks.h3(p.title) +
+            Lightshard.blocks.info((p.status == "In Progress" ? p.status : Lightshard.functions.toSpokenDate(p.date))) +
+            Lightshard.blocks.paragraph(p.desc)
           )
         )
       )
