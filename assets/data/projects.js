@@ -68,7 +68,7 @@ var projects = [
     status: "Completed",
     date: "2021/08/21",
     desc: "The main community website for the Tribes: Ascend video game.",
-    image: "https://wilderzone.live/assets/images/site_cover.webp",
+    image: "{WL}assets/images/site_cover.webp",
     link: "https://wilderzone.live/"
   },
   {
