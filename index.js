@@ -5,9 +5,9 @@ Lightshard.functions.init();
 function populateDOM(){
   $("#projects section_inner").append(
     Lightshard.blocks.h2("In Progress:") +
-    '<projects id="inprogress"></projects>' +
+    '<grid_medium id="inprogress"></grid_medium>' +
     Lightshard.blocks.h2("Completed:") +
-    '<projects id="completed"></projects>'
+    '<grid_medium id="completed"></grid_medium>'
   );
   
 
@@ -19,9 +19,9 @@ function populateDOM(){
     }
     $("#" + id).append(
       Lightshard.blocks.link(p.link, "", "", "",
-        Lightshard.blocks.general("project_card", "", 
+        Lightshard.blocks.general("card", "", 
           Lightshard.blocks.img(p.image) +
-          Lightshard.blocks.general("project_card_inner", '" href="#', 
+          Lightshard.blocks.general("card_inner", "", 
             Lightshard.blocks.taglist("", p.tags) +
             Lightshard.blocks.h3(p.title) +
             Lightshard.blocks.info((p.status == "In Progress" ? p.status : Lightshard.functions.toSpokenDate(p.date))) +
