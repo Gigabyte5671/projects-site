@@ -76,22 +76,22 @@ landing_subtitle{
 
 
 @media only screen and (max-width: 1500px){
-  projects{
+  grid_medium{
     grid-template-columns: auto auto auto auto;
   }
 }
 @media only screen and (max-width: 1200px){
-  projects{
+  grid_medium{
     grid-template-columns: auto auto auto;
   }
 }
 @media only screen and (max-width: 900px){
-  projects{
+  grid_medium{
     grid-template-columns: auto auto;
   }
 }
 @media only screen and (max-width: 600px){
-  projects{
+  grid_medium{
     grid-template-columns: auto;
   }
 }
