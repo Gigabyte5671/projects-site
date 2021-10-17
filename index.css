@@ -73,25 +73,3 @@ landing_title{
 landing_subtitle{
   display: none;
 }
-
-
-@media only screen and (max-width: 1500px){
-  grid_medium{
-    grid-template-columns: auto auto auto auto;
-  }
-}
-@media only screen and (max-width: 1200px){
-  grid_medium{
-    grid-template-columns: auto auto auto;
-  }
-}
-@media only screen and (max-width: 900px){
-  grid_medium{
-    grid-template-columns: auto auto;
-  }
-}
-@media only screen and (max-width: 600px){
-  grid_medium{
-    grid-template-columns: auto;
-  }
-}
