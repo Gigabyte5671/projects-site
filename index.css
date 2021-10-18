@@ -1,5 +1,7 @@
 :root{
   --site_logo_expanded_width: var(--site_logo_collapsed_width);
+
+  --accent_color: #01F9FF;
 }
 
 html{
@@ -31,8 +33,6 @@ section_inner{
   align-items: center;
   width: 100%;
   padding: 10px;
-  border-top: 1px solid var(--ls_lightblue);
-  border-color: rgba(var(--ls_lightblue_rgb), 0.4);
 }
 .logo{
   position: relative;
