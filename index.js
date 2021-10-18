@@ -1,3 +1,7 @@
+if(window.self !== window.top){ //Check if the site has been embedded
+  $("nav").addClass("hidden");
+}
+
 Lightshard.flags.nav_transparency = 0;
 Lightshard.flags.url_aliases.push({alias: "{WL}", url: "https://wilderzone.live/"});
 Lightshard.functions.init();
