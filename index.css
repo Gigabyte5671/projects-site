@@ -72,3 +72,8 @@ landing_title{
 landing_subtitle{
   display: none;
 }
+
+card{
+  border-color: black;
+}
+}
