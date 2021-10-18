@@ -2,9 +2,14 @@ if(window.self !== window.top){ //Check if the site has been embedded
   $("nav").addClass("hidden");
 }
 
-Lightshard.flags.nav_transparency = 0;
-Lightshard.flags.url_aliases.push({alias: "{WL}", url: "https://wilderzone.live/"});
+Lightshard.flags.do_nav_transparency = 0;
+Lightshard.settings.url_aliases.push({alias: "{WL}", url: "https://wilderzone.live/"});
 Lightshard.functions.init();
+
+Lightshard.functions.softLoad(document.querySelector("landing_background img"));
+Lightshard.functions.softLoad(document.querySelector("landing_title"));
+
+
 
 function populateDOM(){
   $("#projects section_inner").append(
