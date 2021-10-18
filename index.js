@@ -1,5 +1,5 @@
-Lightshard.flags.doNavTransparency = 0;
-Lightshard.flags.urlAliases.push({alias: "{WL}", url: "https://wilderzone.live/"});
+Lightshard.flags.nav_transparency = 0;
+Lightshard.flags.url_aliases.push({alias: "{WL}", url: "https://wilderzone.live/"});
 Lightshard.functions.init();
 
 function populateDOM(){
