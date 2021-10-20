@@ -17,6 +17,7 @@
     <link rel="shortcut icon" href="assets/images/G_96px.webp">
     <link rel="stylesheet" href="https://gigabyte5671.github.io/lightshard/css/lightshard.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="lighting.css">
     <link rel="stylesheet" href="https://gigabyte5671.github.io/AutoType/dist/autotype.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,11 +34,21 @@
     <nav>
       <background></background>
       <site_logo><a href=""><site_logo_image><img src="assets/images/G_96px.webp" draggable="false"></site_logo_image></a></site_logo>
-      <navlinks>
-        <a href="#home" class="active" onclick="navlinks(event)"><p>Home</p></a>
-        <a href="#projects" onclick="navlinks(event)"><p>Projects</p></a>
-        <a href="#about" onclick="navlinks(event)"><p>About</p></a>
-      </navlinks>
+      <navtable>
+        <navlinks>
+          <div class="back" onclick="$('navlinks').addClass('show_sublinks')"></div>
+          <a href="#home" class="active" onclick="navlinks(event)"><p>Home</p></a>
+          <a href="#projects" onclick="navlinks(event)"><p>Projects</p></a>
+          <a href="#about" onclick="navlinks(event)"><p>About</p></a>
+        </navlinks>
+
+        <sublinks>
+          <div class="back" onclick="$('navlinks').removeClass('show_sublinks')"></div>
+          <a href="#home" onclick="navlinks(event)"><p>Thing 1</p></a>
+          <a href="#home" onclick="navlinks(event)"><p>Thing 2</p></a>
+          <a href="#home" onclick="navlinks(event)"><p>Thing 3</p></a>
+        </sublinks>
+      </navtable>
     </nav>
 
     <landing id="home">
@@ -57,6 +68,26 @@
         <h1>Projects</h1>
         <horizontal_accent></horizontal_accent>
         <section_inner>
+
+          <glass>
+            <!-- <pane style="background-color: blue;"></pane>
+            <pane style="background-color: blueviolet;transform: translateZ(12px);"></pane>
+            <pane style="background-color: violet;transform: translateZ(18px);"></pane> -->
+            <glass_inner>
+
+            </glass_inner>
+          </glass>
+
+          <z_container>
+            <z>
+              <z_inner>
+                <img src="assets/images/Honor_Logo.svg" draggable="false">
+                <h2>An Example Title</h2>
+                <p>Ut aliquip et consectetur reprehenderit aliqua tempor. In laborum ullamco sint culpa esse enim quis cillum mollit reprehenderit sit cupidatat. Dolore enim Lorem commodo laborum laboris exercitation est amet anim anim. Labore excepteur aute nisi nisi dolore nulla voluptate ipsum. Elit culpa pariatur consequat magna pariatur anim laborum irure Lorem elit commodo ea et exercitation.</p>
+              </z_inner>
+            </z>
+          </z_container>
+
         </section_inner>
       </section>
       <section id="about">

@@ -12,12 +12,9 @@ Lightshard.functions.softLoad(document.querySelector("landing_title"));
 
 
 function populateDOM(){
-  $("#projects section_inner").append(
-    Lightshard.blocks.h2("In Progress:") +
-    '<grid_medium id="inprogress"></grid_medium>' +
-    Lightshard.blocks.h2("Completed:") +
-    '<grid_medium id="completed"></grid_medium>'
-  );
+  /* $("#projects section_inner").append(
+    '<grid_medium id="inprogress"></grid_medium>'
+  ); */
   
 
   projects.forEach(function(p){
@@ -26,7 +23,7 @@ function populateDOM(){
     }else{
       var id = "completed";
     }
-    $("#" + id).append(
+    /* $("#inprogress").append(
       Lightshard.blocks.link(p.link, "", "", "",
         Lightshard.blocks.general("card", "", 
           Lightshard.blocks.img(p.image) +
@@ -38,10 +35,22 @@ function populateDOM(){
           )
         )
       )
+    ); */
+
+    $("#projects section_inner").append(
+      Lightshard.blocks.general("article_inner", "", 
+        Lightshard.blocks.general("article_image", "", 
+          Lightshard.blocks.img(p.image)
+        ) +
+        Lightshard.blocks.taglist("", p.tags) +
+        Lightshard.blocks.h2(p.title) +
+        Lightshard.blocks.info((p.status == "In Progress" ? p.status : Lightshard.functions.toSpokenDate(p.date))) +
+        Lightshard.blocks.paragraph(p.desc)
+      )
     );
   });
 }
-populateDOM();
+//populateDOM();
 
 
 function landingScroll(){

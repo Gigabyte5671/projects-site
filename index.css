@@ -76,4 +76,26 @@ landing_subtitle{
 card{
   border-color: black;
 }
+
+
+navtable{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+nav .show_sublinks{
+  animation: a_hide_up var(--ls_anim_duration_medium) ease forwards;
+}
+
+@keyframes a_hide_up{
+  0%   {transform: translateY(0%);}
+  100% {transform: translateY(-100%);}
+}
+@keyframes a_reveal_up{
+  0%   {transform: translateY(100%);}
+  100% {transform: translateY(0%);}
 }
