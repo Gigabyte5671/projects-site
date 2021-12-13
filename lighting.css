@@ -94,7 +94,7 @@ glass::after{
   width: 200px;
   height: 13px;
   background-color: white;
-  background: radial-gradient(white, blue, transparent, transparent);
+  background: radial-gradient(white, transparent, transparent);
   border-radius: 100%;
   /* box-shadow: 0px 0px 20px 3px blue; */
   transform: rotateX(70deg) translateY(0px);
